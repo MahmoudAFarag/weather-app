@@ -1,0 +1,25 @@
+.nav-page {
+  color: white;
+}
+
+a:hover {
+  color: white;
+}
+
+/* .dsd {
+  width: 300px;
+  margin: 12rem auto 0 auto;
+}
+#msg1,
+#msg2 {
+  display: flex;
+  justify-content: center;
+} */
+
+footer {
+  position: fixed;
+  bottom: 2px;
+  height: 30px;
+  text-align: center;
+  width: 100%;
+}
