@@ -10,7 +10,7 @@ document.querySelector("form").onsubmit = () => {
   msg1.innerHTML = "Fetching Data...";
   msg2.innerHTML = "";
 
-  fetch(`http://localhost:3000/weather?address=${location}`).then((response) => {
+  fetch(`/weather?address=${location}`).then((response) => {
     response.json().then((data) => {
       if (data.error) {
         return (msg1.innerHTML = "<p style='color:red'>Error</p>"), (msg2.innerHTML = data.error);

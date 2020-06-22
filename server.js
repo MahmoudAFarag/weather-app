@@ -6,6 +6,7 @@ const getLocation = require("./utils/geocode");
 const express = require("express");
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 // Define Template Engine
 app.set("view engine", "ejs");
@@ -70,4 +71,4 @@ app.get("*", (req, res) => {
   });
 });
 
-app.listen(3000, () => console.log("Connected to server on port 3000"));
+app.listen(port, () => console.log(`Connected to server on port ${port}`));
