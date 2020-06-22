@@ -13,6 +13,7 @@ document.querySelector("form").onsubmit = () => {
   fetch(`/weather?address=${location}`).then((response) => {
     response.json().then((data) => {
       if (data.error) {
+        button.classList.remove("spinner-border", "spinner-border-sm");
         status.innerHTML = "Search";
         return (msg1.innerHTML = "<p style='color:red'>Error</p>"), (msg2.innerHTML = data.error);
       }
