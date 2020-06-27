@@ -1,21 +1,26 @@
-.nav-page {
-  color: white;
-}
-
+.nav-page,
 a:hover {
   color: white;
 }
 
-/* .dsd {
-  width: 300px;
-  margin: 12rem auto 0 auto;
+body {
+  background-color: #e7dfd5;
+  font-family: "Montserrat", sans-serif;
 }
-#msg1,
-#msg2 {
+
+.card {
   display: flex;
   justify-content: center;
-} */
+  align-items: center;
+  height: 200px;
+  max-width: 700px;
+  margin: 9rem auto;
+  border-radius: 5px;
+}
 
+h4 {
+  margin-bottom: 30px;
+}
 footer {
   position: fixed;
   bottom: 2px;

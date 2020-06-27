@@ -1,19 +1,18 @@
 <%- include('./layouts/header'); -%>
-
-<div class="dsd">
-<form class="row g-3 ">
-    <div class="col-auto">
-      <input type="text" class="form-control " id="location" placeholder="Location" required autocomplete="off">
-    </div>
-    <div class="col-auto">
-      <button class="btn btn-primary" type="submit">
-        <span id="thebtn" role="status" aria-hidden="true"></span>
-        <b id="worrd">Search</b>
-      </button>
-      <!-- <button type="submit" class="btn btn-primary mb-3">Search</button> -->
-    </div>
+<div class="card">
+  <h4>Please provide your Location !</h4>
+  <form action="/" method="post">
+    <div class="row">
+      <div class="col-auto">
+  <input type="text" placeholder="Location" class="form-control text-center" name="location" required>
+</div>
+  <div class="col-auto">
+  <button type="submit" class="btn btn-primary">Submit</button>
+</div>
+</div>
   </form>
 </div>
+
   <p id="msg1"></p>
   <p id="msg2"></p>
 

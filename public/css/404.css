@@ -67,7 +67,7 @@ h1 small {
 .blue {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/198554/blue-1.png) no-repeat center center;
   opacity: 0;
-  animation: blue 3s linear infinite, opacityBlue 5s linear alternate infinite;
+  animation: blue 5s linear infinite, opacityBlue 5s linear alternate infinite;
 }
 
 @media only screen and (min-width: 780px) {

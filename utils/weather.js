@@ -6,9 +6,14 @@ const getWeather = (latitude, longitude) => {
     axios
       .get(url)
       .then((response) => {
-        const { temp, humidity } = response.data.main;
-        const city = response.data.name;
-        resolve(`It is currently ${temp} degrees with ${humidity} percent humidity in ${city}`);
+        resolve({
+          city: response.data.name,
+          condition: response.data.weather[0].main,
+          wind: response.data.wind.speed,
+          humidity: response.data.main.humidity,
+          temperature: response.data.main.temp,
+          icon: response.data.weather[0].icon,
+        });
       })
       .catch((e) => {
         reject(e);
