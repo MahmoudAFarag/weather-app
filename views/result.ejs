@@ -8,10 +8,10 @@
 </head>
 <body>
   <div class="card">
-    <h2><%= city %></h2>
-    <h3><%= condition %><span>Wind <%= wind %> <span class="dot">•</span> Humidity <%= humidity %>%</span></h3>
-    <h1><%= temp %>°</h1>
-       <img src="http://openweathermap.org/img/wn/<%= icon %>@4x.png" alt="weather-icon"> 
+    <h2><%= weather.city %></h2>
+    <h3><%= weather.condition %><span>Wind <%= weather.wind %> <span class="dot">•</span> Humidity <%= weather.humidity %>%</span></h3>
+    <h1><%= Math.round(weather.temp) %>°</h1>
+       <img src="http://openweathermap.org/img/wn/<%= weather.icon %>@4x.png" alt="weather-icon"> 
       </div>
 </body>
 </html>

@@ -11,7 +11,7 @@ const getWeather = (latitude, longitude) => {
           condition: response.data.weather[0].main,
           wind: response.data.wind.speed,
           humidity: response.data.main.humidity,
-          temperature: response.data.main.temp,
+          temp: response.data.main.temp,
           icon: response.data.weather[0].icon,
         });
       })

@@ -8,6 +8,10 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+#userLocation {
+  margin-top: 1rem;
+}
+
 .card {
   display: flex;
   justify-content: center;
