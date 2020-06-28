@@ -20,14 +20,7 @@ app.post("/", async (req, res) => {
     const geolocation = await getLocation(req.body.location);
     const { latitude, longitude } = geolocation;
     const weather = await getWeather(latitude, longitude);
-    res.render("result", {
-      icon: weather.icon,
-      city: weather.city,
-      condition: weather.condition,
-      wind: weather.wind,
-      humidity: weather.humidity,
-      temp: Math.round(weather.temperature),
-    });
+    res.render("result", { weather });
   } catch (e) {
     res.send(`${e}`);
   }
